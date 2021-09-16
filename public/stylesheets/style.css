@@ -73,6 +73,9 @@ h6 {
 img {
   vertical-align: middle;
 }
+.imgPlato{
+  width: 100%;
+}
 a {
   color: inherit;
 }

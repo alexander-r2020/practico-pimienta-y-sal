@@ -16,10 +16,15 @@
         <div class="ps-col l6 ps-padding-large">
           <h1 class="ps-center"> <%= idMenu.nombreDePlato %> </h1>
           <br />
-          <h4> <%= idMenu.descripcion %> </h4>
+            <% if (idMenu.descripcion) { %>
+              <h4> <%= idMenu.descripcion %> </h4>
+            <% } else{ %>
+                <p>Plato Tipico</p>
+            <% } %>
           <p class="ps-text-grey">
             <%= idMenu.precio %>
           </p>
+          <img class="imgPlato" src="/images/<%=idMenu.img %>" alt="idMenu.nombreDePlato">
         </div>
 
         <div class="ps-col l6 ps-padding-large ps-img-menu">
